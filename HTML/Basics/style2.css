@@ -1,0 +1,25 @@
+#main-box{
+    height: 317px;
+    width: 398px;
+    border: 2px solid black;
+    margin-top: 20px;
+    padding: 12px;
+    align-items: center;
+    justify-content: center;
+}
+.btn button{
+    height: 40px;
+    width: 390px;
+    background-color: white;
+
+
+}
+.btn a{
+    text-decoration: none;
+    color: black;
+    font-size: medium;
+}
+.main{
+    display: flex;
+    justify-content: center;
+}
