@@ -1,0 +1,28 @@
+
+.para1{
+    background-color: rgb(121, 121, 237);
+}
+
+.head{
+    text-align: center;
+}
+.para{
+    line-height: 1.5;
+}
+.footer{
+    text-align: center;
+}
+.head2{
+    text-align: center;
+    
+}
+.main-img img{
+   margin-left: 200px;
+}
+.color{
+    background-color: rgb(122, 221, 221);
+}
+.underline{
+    text-decoration: underline;
+    margin-left: 50px;
+}
