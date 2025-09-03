@@ -17,7 +17,7 @@
     
 }
 .main-img img{
-   margin-left: 200px;
+   margin-left: 298px;
 }
 .color{
     background-color: rgb(122, 221, 221);
@@ -36,5 +36,36 @@
     height: 30px;
     width: 782px;
     margin-bottom: 12px;
+   margin-left: 133px;
 
+}
+
+nav {
+  position: fixed;       /* Fixes it to the screen */
+  top: 0;                /* Stick to top */
+  left: 0;               /* Start from left */
+  width: 100%;           /* Full width */
+  background-color: rgb(45, 133, 228); /* Your background */
+  display: flex;         /* Flexbox for alignment */
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.2); /* Optional shadow */
+  z-index: 1000;         /* Keep it above other content */
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin-right: 30px;
+}
+
+body {
+  margin: 0;
+  padding-top: 80px; /* Push content below fixed nav */
 }
