@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Intragraminds - Food Delight</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="food.css" />
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Intragraminds</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero text-center text-white d-flex align-items-center">
+        <div class="container">
+            <h1 style="color: black;">Welcome to Intragraminds</h1>
+            <p style="color: black;">Your favorite food, fresh and fast!</p>
+            <a href="#menu" class="btn btn-orange btn-lg">Explore Menu</a>
+        </div>
+    </header>
+
+    <!-- Menu Section -->
+    <section id="menu" class="container my-5">
+        <h2 class="text-center mb-4">Our Delicious Menu</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?crop=entropy&cs=tinysrgb&fit=crop&h=200&w=300" class="card-img-top" alt="Burger Deluxe" />
+                    <div class="card-body">
+                        <h5 class="card-title">Burger Deluxe</h5>
+                        <p class="card-text">Juicy beef burger with fresh lettuce, tomato, and cheese.</p>
+                        <a href="#" class="btn btn-outline-orange">Order Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTy8OJAfk-THcvEKQ8T9aIpYPFC7EGgLSUB3A&s" />
+                    <div class="card-body">
+                        <h5 class="card-title">Pasta Primavera</h5>
+                        <p class="card-text">Fresh vegetables and creamy sauce over pasta noodles.</p>
+                        <a href="#" class="btn btn-outline-orange">Order Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReAnyD2z1QEQwgQFkqFhG_K6CT6I_hNTMuKQ&s" />
+                    <div class="card-body">
+                        <h5 class="card-title">Grilled Chicken</h5>
+                        <p class="card-text">Perfectly seasoned chicken with herbs and spices.</p>
+                        <a href="#" class="btn btn-outline-orange">Order Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">About Us</h2>
+            <p class="text-center mx-auto" style="max-width: 800px;">
+                At Intragraminds, we believe that great food brings people together. We serve delicious meals crafted with love and the freshest ingredients. Whether you're craving comfort food or something gourmet, we have something for every palate!
+            </p>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="container my-5">
+        <h2 class="text-center mb-4">What Our Customers Say</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body">
+                        <p>"Absolutely loved the food! Quick delivery and mouth-watering taste!"</p>
+                        <h6 class="card-subtitle text-muted">– Priya S.</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body">
+                        <p>"Fresh ingredients and amazing flavors. Highly recommend Intragraminds!"</p>
+                        <h6 class="card-subtitle text-muted">– Rajesh K.</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body">
+                        <p>"The best food experience I've had in a while. Great service too!"</p>
+                        <h6 class="card-subtitle text-muted">– Neha P.</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Get In Touch</h2>
+            <form class="mx-auto" style="max-width: 600px;">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Your Name</label>
+                    <input type="text" id="name" class="form-control" placeholder="Enter your name" />
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email Address</label>
+                    <input type="email" id="email" class="form-control" placeholder="Enter your email" />
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea id="message" class="form-control" rows="4" placeholder="Write your message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-orange w-100">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2025 Intragraminds. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
