@@ -1,0 +1,101 @@
+/* *{
+    margin: 0px;
+    padding: 0px;
+}
+.nav ul{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 0px;
+   padding: 0px;
+}
+li{
+    margin-left: 30px;
+    margin-top: 20px;
+    font-size: 30px;
+    list-style: none;
+    margin-bottom: 20px;
+
+}
+li a{
+    text-decoration: none;
+    color: aliceblue;
+}
+nav{
+    background-color: rgb(33, 30, 30);
+}
+li :hover{
+    color: rgb(250, 187, 28);
+} */
+
+/* ................................................................................. */
+/* *{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    height: 100px;
+    width: 150px;
+    background-color: rgb(63, 92, 242);
+    color: aliceblue;
+    font-size: 30px;
+    border: none;
+    border-radius: 3px;
+    transition:background-color 0.3s ease ;
+  }
+  .btn{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  .btn button:hover{
+    background-color: rgb(51, 130, 130);
+  } */
+
+
+
+  /* ................................................. */
+
+
+    /* Center the grid on the page */
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh; /* full viewport height */
+      margin: 0;
+      background-color: #f0f0f0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Grid container */
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(2, 150px); /* 2 columns */
+      grid-template-rows: repeat(2, 150px);    /* 2 rows */
+      gap: 10px;                               /* gap between boxes */
+    }
+
+    /* Grid items (boxes) */
+    .grid-item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 20px;
+      color: white;
+      font-weight: bold;
+      border-radius: 8px;
+    }
+
+    /* Different background colors for each box */
+    #box1 { background-color: #e74c3c; } /* red */
+    #box2 { background-color: #3498db; } /* blue */
+    #box3 { background-color: #2ecc71; } /* green */
+    #box4 { background-color: #f1c40f; } /* yellow */
+  

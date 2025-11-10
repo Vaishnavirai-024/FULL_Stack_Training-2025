@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Filter</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background: #f7f7f7;
+      padding: 20px;
+    }
+    button {
+      padding: 6px 12px;
+      margin: 5px;
+      border: none;
+      border-radius: 5px;
+      background: #007bff;
+      color: white;
+      cursor: pointer;
+    }
+    input {
+      padding: 6px;
+      width: 200px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      margin-top: 10px;
+    }
+    li {
+      background: white;
+      margin: 5px auto;
+      padding: 8px;
+      width: 250px;
+      border-radius: 5px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+  <h2>Product Filter</h2>
+  <input type="text" id="search" placeholder="Search product..."><br>
+  <button onclick="filterProducts('all')">All</button>
+  <button onclick="filterProducts('electronics')">Electronics</button>
+  <button onclick="filterProducts('clothing')">Clothing</button>
+
+  <ul id="productList"></ul>
+
+  <script src="ProductFilter.js"></script>
+</body>
+</html>

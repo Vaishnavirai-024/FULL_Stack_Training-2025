@@ -1,0 +1,64 @@
+.box{
+    height: 50px;
+    width: 100px;
+    background-color: deeppink;
+    border: none;
+    border-radius: 5px;
+    animation: direction 1.9s linear 1s infinite;
+    position: relative;
+   
+body{
+      margin: 0;
+  overflow-x: hidden; /* hide horizontal scrollbar */
+}
+
+
+    
+}
+@keyframes direction  {
+    0%{
+    left: 0px;
+    }
+   100%{
+    left: 100vw;
+    }
+
+ 
+
+    
+  /* 0% { left: 0; }
+  50% { left: 90vw; }
+  100% { left: 0; } */
+
+
+}
+#b2{
+ background-color: green;
+animation: direction 2s linear 1.2s infinite;
+
+}
+#b3{
+ background-color: rgb(27, 123, 249);
+animation: direction 2.1s linear 1.3s infinite;
+
+}
+#b4{
+ background-color: rgb(247, 238, 63);
+animation: direction 2.3s linear  1.4s infinite;
+
+}
+#b5{
+ background-color: rgb(202, 30, 30);
+animation: direction 2.5s linear  1.5s infinite;
+
+}
+#b6{
+ background-color: rgb(253, 165, 77);
+animation: direction 2.8s linear  1.6s infinite;
+
+}
+#b7{
+ background-color: rgb(202, 16, 230);
+animation: direction 3s linear  1.7s infinite;
+
+}
