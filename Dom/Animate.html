@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bouncing Ball</title>
+  <style>
+    #box {
+      width: 400px;
+      height: 300px;
+      border: 2px solid black;
+      position: relative;
+      overflow: hidden;
+      margin-bottom: 10px;
+    }
+    #ball {
+      width: 40px;
+      height: 40px;
+      background: red;
+      border-radius: 50%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    button { margin-right: 5px; }
+    #startBtn{
+      background-color: rgb(54, 54, 237);
+      border-radius: 5px;
+      border: none;
+      height: 33px;
+      width: 70px;
+      color: white;
+      font-size: 20px;
+    }
+     #stopBtn{
+      background-color: rgb(54, 54, 237);
+      border-radius: 5px;
+      border: none;
+      height: 33px;
+      width: 70px;
+      color: white;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div id="box">
+    <div id="ball"></div>
+  </div>
+  <button id="startBtn">Start</button>
+  <button id="stopBtn">Stop</button>
+
+  <script src="Animate.js"></script>
+</body>
+</html>

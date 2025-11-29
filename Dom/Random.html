@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Guess the Number</title>
+    <style>
+        body {
+            font-family: Arial;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #f2f2f2;
+        }
+        #game {
+            background: white;
+            width: 300px;
+            padding: 20px;
+            box-shadow: 0 0 10px #aaa;
+            border-radius: 8px;
+            width: 300px;
+            text-align: center;
+        }
+        input {
+            padding: 8px;
+            width: 80%;
+            margin-bottom: 10px;
+        }
+        button {
+            padding: 8px 15px;
+            cursor: pointer;
+        }
+        #message {
+            margin-top: 15px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div id="game">
+    <h2>Guess the Number (1-100)</h2>
+    <input type="number" id="guessInput" placeholder="Enter your guess" />
+    <br>
+    <button onclick="play()">Submit</button>
+    <p id="message"></p>
+    <p id="chances"></p>
+</div>
+
+<script src="Random.js"></script>
+
+</body>
+</html>

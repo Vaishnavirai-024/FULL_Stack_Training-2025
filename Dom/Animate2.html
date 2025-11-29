@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Circle Animation</title>
+  <style>
+    #container {
+      width: 400px;
+      height: 200px;
+      border: 2px solid black;
+      position: relative;
+      overflow: hidden;
+      margin-bottom: 10px;
+    }
+    #circle {
+      width: 40px;
+      height: 40px;
+      background: blue;
+      border-radius: 50%;
+      position: absolute;
+      top: 80px;
+      left: 0;
+    }
+    #moveBtn{
+      background-color: rgb(54, 54, 237);
+      border-radius: 5px;
+      border: none;
+      height: 33px;
+      width: 100px;
+      color: white;
+      font-size: 15px;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <div id="circle"></div>
+  </div>
+  <button id="moveBtn">Move Circle</button>
+
+  <script src="Animate2.js"></script>
+</body>
+</html>
