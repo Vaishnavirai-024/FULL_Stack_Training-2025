@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Door with Knob Animation</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #dcdcdc;
+      font-family: sans-serif;
+    }
+
+    .room {
+      position: relative;
+      width: 220px;
+      height: 320px;
+      background: #64b5e8;
+      border: none;
+      perspective: 800px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    }
+
+    .door {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: #8b4513;
+      border-right: 4px solid #5a2f0b;
+      transform-origin: left;
+      transition: transform 1s ease;
+      /* box-shadow: inset -5px 0 10px rgba(0,0,0,0.5); */
+
+    }
+
+    .door::after {
+      content: "";
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      background: gold;
+      border-radius: 50%;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      /* box-shadow: 0 0 5px #333; */
+    }
+
+    .room:hover .door {
+      transform: rotateY(-100deg);
+    }
+
+    .text {
+      font-size: 24px;
+      font-weight: bold;
+      color: #333;
+      z-index: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="room">
+    <div class="text">Hello World</div>
+    <div class="door"></div>
+  </div>
+</body>
+</html>
