@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Odd or Even Game</title>
+
+<style>
+    body{
+        background: #111;
+        color: white;
+        text-align: center;
+        padding-top: 30px;
+        font-family: Arial;
+    }
+    input{
+        margin: 10px;
+        padding: 8px;
+        width: 120px;
+    }
+    button{
+        padding: 8px 15px;
+        background: #00c851;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    button:hover{
+        background: #009e40;
+    }
+    #reset{
+        background: #ff4444;
+    }
+</style>
+
+</head>
+<body>
+
+<h2>Odd or Even Game</h2>
+<p>Two players choose numbers between <b>1–10</b></p>
+<p>Even sum → Player 1 scores<br>Odd sum → Player 2 scores</p>
+
+<h3>Round: <span id="round">1</span> / 10</h3>
+
+<input type="number" id="p1" placeholder="Player 1 number">
+<input type="number" id="p2" placeholder="Player 2 number">
+<br>
+<button onclick="playRound()">Submit</button>
+<button id="reset" onclick="resetGame()">Reset</button>
+
+<p id="result"></p>
+
+<h3>Scores</h3>
+<p>Player 1: <span id="s1">0</span></p>
+<p>Player 2: <span id="s2">0</span></p>
+
+<script src="oddEven.js"></script>
+</body>
+</html>

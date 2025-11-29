@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Math Duel</title>
+
+<style>
+    body{
+        text-align:center;
+        background:#222;
+        color:white;
+        font-family:Arial;
+        padding-top:30px;
+    }
+    input{
+        padding:8px;
+        margin:10px;
+        width:120px;
+    }
+    button{
+        padding:8px 15px;
+        background:#00c851;
+        border:none;
+        color:white;
+        border-radius:5px;
+        cursor:pointer;
+    }
+    button:hover{
+        background:#009e40;
+    }
+    #reset{
+        background:#ff4444;
+        margin-top:10px;
+    }
+</style>
+
+</head>
+<body>
+
+<h2>Math Duel (2 Players)</h2>
+<h3>Round: <span id="round">1</span>/10</h3>
+
+<h2 id="question">Question appears here</h2>
+
+<input id="p1" placeholder="Player 1 answer">
+<input id="p2" placeholder="Player 2 answer">
+<br>
+<button onclick="checkAnswer()">Submit</button>
+<button id="reset" onclick="resetGame()">Reset</button>
+
+<p id="msg"></p>
+
+<h3>Scores</h3>
+<p>Player 1: <span id="s1">0</span></p>
+<p>Player 2: <span id="s2">0</span></p>
+
+<script src="MathDuel.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Number Memory Game</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #f2f2f2;
+        text-align: center;
+        padding: 40px;
+    }
+
+    #numberBox {
+        font-size: 40px;
+        font-weight: bold;
+        margin: 20px 0;
+        background: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        display: none;
+    }
+
+    input {
+        padding: 10px;
+        font-size: 18px;
+        margin-top: 10px;
+        width: 200px;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 18px;
+        margin-top: 20px;
+        cursor: pointer;
+    }
+
+    #result, #score {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+</style>
+</head>
+<body>
+
+<h2>🔢 Number Memory Game</h2>
+
+<div id="numberBox"></div>
+
+<input type="number" id="userInput" placeholder="Enter number" />
+
+<br>
+<button onclick="startRound()">Start Round</button>
+<button onclick="checkAnswer()">Submit</button>
+
+<p id="result"></p>
+<p id="score"></p>
+
+<script src="numberMemory.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Freeze or Move</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        padding: 40px;
+        background: #f2f2f2;
+    }
+
+    #word {
+        font-size: 60px;
+        font-weight: bold;
+        margin: 30px;
+        padding: 20px;
+        background: #fff;
+        border-radius: 10px;
+        display: inline-block;
+        min-width: 250px;
+    }
+
+    button {
+        font-size: 22px;
+        padding: 12px 25px;
+        margin-top: 20px;
+        cursor: pointer;
+    }
+
+    #score {
+        margin-top: 20px;
+        font-size: 24px;
+    }
+</style>
+
+</head>
+<body>
+
+<h2>🧊 Freeze or Move (Reaction Game)</h2>
+
+<div id="word">Click Start</div>
+
+<button onclick="handleClick()">CLICK</button>
+<br><br>
+<button onclick="startGame()">Start Game</button>
+
+<p id="score"></p>
+
+<script src="FreezeMove.js"></script>
+
+</body>
+</html>

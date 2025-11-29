@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Rock Paper Scissors</title>
+
+<style>
+    body{
+        font-family: Arial;
+        background: #222;
+        color: white;
+        text-align: center;
+        padding-top: 30px;
+    }
+
+    .btn{
+        padding: 10px 20px;
+        margin: 10px;
+        background: #007bff;
+        border: none;
+        color: white;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+
+    .btn:hover{
+        background: #005fcc;
+    }
+
+    #reset{
+        background: #ff4444;
+    }
+
+    #scoreBox{
+        margin-top: 20px;
+        padding: 10px;
+        background: #333;
+        border-radius: 8px;
+        width: 250px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+</style>
+
+</head>
+<body>
+
+<h2>Rock - Paper - Scissors Game</h2>
+<h3>Round: <span id="round">1</span> / 10</h3>
+
+<button class="btn" onclick="play('rock')">Rock</button>
+<button class="btn" onclick="play('paper')">Paper</button>
+<button class="btn" onclick="play('scissors')">Scissors</button>
+
+<p>Computer chose: <b id="computer">-</b></p>
+<p id="message">Make your move!</p>
+
+<div id="scoreBox">
+    <p>Your Score: <span id="playerScore">0</span></p>
+    <p>Computer Score: <span id="computerScore">0</span></p>
+</div>
+
+<button id="reset" class="btn" onclick="resetGame()">Reset Game</button>
+
+<!-- Linking External JS File -->
+<script src="rock-paper-scissor.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Color Match</title>
+
+<style>
+    body{
+        background:#111;
+        color:white;
+        text-align:center;
+        padding-top:40px;
+        font-family:Arial;
+    }
+    button{
+        padding:10px 15px;
+        margin:8px;
+        border:none;
+        color:white;
+        border-radius:5px;
+        cursor:pointer;
+    }
+    #red{ background:red; }
+    #green{ background:green; }
+    #blue{ background:blue; }
+    #yellow{ background:gold; color:black; }
+    #reset{ background:#ff4444; }
+
+    #word{
+        font-size:40px;
+        margin-bottom:20px;
+    }
+</style>
+
+</head>
+<body>
+
+<h2>Color Match Challenge</h2>
+<h3>Round: <span id="round">1</span>/10</h3>
+
+<div id="word">COLOR</div>
+
+<button id="red" onclick="choose('red')">Red</button>
+<button id="green" onclick="choose('green')">Green</button>
+<button id="blue" onclick="choose('blue')">Blue</button>
+<button id="yellow" onclick="choose('yellow')">Yellow</button>
+
+<br>
+<button id="reset" onclick="resetGame()">Reset</button>
+
+<p id="msg"></p>
+<p>Score: <span id="score">0</span></p>
+
+<script src="colourMatch.js"></script>
+</body>
+</html>
