@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Random Joke Generator</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background: #f2f2f2;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        #jokeBox {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            width: 400px;
+            margin: 20px auto;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+
+        #nextBtn {
+            padding: 10px 20px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            margin-top: 15px;
+            cursor: pointer;
+        }
+
+        #nextBtn:disabled {
+            background: gray;
+            cursor: not-allowed;
+        }
+
+        #setup, #punchline {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Random Joke Generator</h1>
+
+    <div id="jokeBox">
+        <p id="setup">Click "Next Joke" to start!</p>
+        <p id="punchline"></p>
+        <button id="nextBtn">Next Joke</button>
+    </div>
+
+    <script src="joke.js"></script>
+</body>
+</html>
